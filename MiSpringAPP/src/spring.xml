@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	<bean id="libro" class="unsch.Libro">
+		<property name="idLibro" value="123456"></property>
+		<property name="nombre" value="Odisea"></property>
+		
+		
+		<property name="autor" ref="autor"></property>
+	</bean>
+
+
+	<bean id="autor" class="unsch.Autor">
+		<property name="nombre" value="Lizeth"></property>
+		<property name="apellido" value="La Serna"></property>
+	</bean>
+</beans>
